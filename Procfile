@@ -1,1 +1,1 @@
-web: gunicorn craftcafe.wsgi
+web: gunicorn craftcafe.wsgi --preload
