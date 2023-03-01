@@ -37,7 +37,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['craft-cafe.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['craftcafe.herokuapp.com', 'localhost']
 
 
 # Application definition
