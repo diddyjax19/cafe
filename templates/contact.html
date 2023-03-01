@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+<!--Workshop Descriptions-->
+<div class="container-fluid contact-container">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1 class="my-4">The Craft Café Workshops</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 my-2">
+            <h3 id="wool-info">Mondays: All Things Wool</h3>
+            <p class="text-muted">4 - 6pm, 6 - 8pm</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-1">
+            <img src="https://res.cloudinary.com/dkolsfjkx/image/upload/v1676278460/joy-ru-P72cSc3M0cM-unsplash_o9hswf.jpg"
+                class="img-thumbnail" alt="Balls of Wool">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 offset-md-1">
+            <p>Wool is not all about just knitting! And it's not just for grannies. Join in the fun making:</p>
+            <ul>
+                <li>Macramé wall hangings</li>
+                <li>Tassel charms</li>
+                <li>Yarn dolls</li>
+                <li>Blankets</li>
+                <li>Paper Plate Weaving</li>
+            </ul>
+            <p>and much much more....</p>
+            <p>£2 per person</p>
+            <a class="btn btn-dark btn-sm my-2" href="{% url 'contact' %}#booking-form">Book your places here</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 my-2">
+            <h3 id="clothes-info">Tuesdays: Clothing</h3>
+            <p class="text-muted">4 - 6pm, 6 - 8pm</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-1">
+            <img src="https://res.cloudinary.com/dkolsfjkx/image/upload/v1674996920/dress_tbsrao.jpg"
+                class="img-thumbnail" alt="Balls of Wool">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 offset-md-1">
+            <p>Upcycle, recycle and make your own unique garments. Try your hand at:</p>
+            <ul>
+                <li>Fashionable elbow and knee patches</li>
+                <li>Hand stitching Appliqué</li>
+                <li>Jewellery</li>
+                <li>Customize shoes</li>
+                <li>Altering your drab denim</li>
+            </ul>
+            <p>and much much more....</p>
+            <p>£2 per person</p>
+            <a class="btn btn-dark btn-sm my-2" href="{% url 'contact' %}#booking-form">Book your places here</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 my-2">
+            <h3 id="quilt-info">Wednesdays: Quilting</h3>
+            <p class="text-muted">4 - 6pm, 6 - 8pm</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-1">
+            <img src="https://res.cloudinary.com/dkolsfjkx/image/upload/v1676279685/20220310_130008_ra04fx.jpg"
+                class="img-thumbnail" alt="Balls of Wool">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 offset-md-1">
+            <p>Either join our group patchwork circle and add blocks to the craft community patchwork project, or try
+                your hand at many individual patchwork creations, such as:</p>
+            <ul>
+                <li>Tote Bags</li>
+                <li>Free Motion Quilting</li>
+                <li>Mug rugs</li>
+                <li>Baby quilts</li>
+                <li>Table runners</li>
+            </ul>
+            <p>and much much more....</p>
+            <p>£2 per person</p>
+            <a class="btn btn-dark btn-sm my-2" href="{% url 'contact' %}#booking-form">Book your places here</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 my-2">
+            <h3 id="home-info">Thursdays: Home Crafts</h3>
+            <p class="text-muted">4 - 6pm, 6 - 8pm</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-1">
+            <img src="https://res.cloudinary.com/dkolsfjkx/image/upload/v1674908761/20211201_105546_lx9osl.jpg"
+                class="img-thumbnail" alt="Balls of Wool">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 offset-md-1">
+            <p>Unique crafts to decorate your home, have a go at:</p>
+            <ul>
+                <li>Wall string art</li>
+                <li>Rope decorations</li>
+                <li>Napkin stamping</li>
+                <li>Hanging baskets</li>
+                <li>Wreaths</li>
+            </ul>
+            <p>and much much more....</p>
+            <p>£2 per person</p>
+            <a class="btn btn-dark btn-sm my-2" href="{% url 'contact' %}#booking-form">Book your places here</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 my-2">
+            <h3 id="needlepoint-info">Fridays: Needlepoint</h3>
+            <p class="text-muted">4 - 6pm, 6 - 8pm</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-1">
+            <img src="https://res.cloudinary.com/dkolsfjkx/image/upload/v1676279343/gio-gix-r4oGH_91jrU-unsplash_nosb41.jpg"
+                class="img-thumbnail" alt="Balls of Wool">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 offset-md-1">
+            <p>Get those hands warmed up with embroidery tricks and needlepoint crafts. What about</p>
+            <ul>
+                <li>Needlepoint ornaments</li>
+                <li>Framed canvases</li>
+                <li>Pincushions</li>
+                <li>Luggage tags</li>
+                <li>Friendship Bracelets</li>
+            </ul>
+            <p>and much much more....</p>
+            <p>£2 per person</p>
+            <a class="btn btn-dark btn-sm my-2" href="{% url 'contact' %}#booking-form">Book your places here</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 my-2">
+            <h3 id="kids-info">Saturdays: Kids Crafts</h3>
+            <p class="text-muted">10 - 11.30am, 11.30 - 1pm</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-1">
+            <img src="https://res.cloudinary.com/dkolsfjkx/image/upload/v1676280187/20200429_145036_1_karrqm.jpg"
+                class="img-thumbnail mb-3" alt="Balls of Wool">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 offset-md-1">
+            <p>Bring along the kids, for some creative craft time. Parents welcome to join in too, or just sit and relax
+                with a coffee.</p>
+                <ul>
+                    <li>Painting</li>
+                    <li>Windchimes</li>
+                    <li>Marble Runs</li>
+                    <li>Bird feeders</li>
+                    <li>Bookmarks</li>
+                </ul>
+                <p>and much much more....</p>
+                <p>£2 per person</p>
+            <a class="btn btn-dark btn-sm my-2" href="{% url 'contact' %}#booking-form">Book your places here</a>
+        </div>
+    </div>
+</div>
+
+<hr class="solid">
+
+<!--Workshop Booking Form-->
+
+        <!-- Messages Container -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="container" id="booking-form">
+    <div class="row my-4 text-center">
+        <div class="col-12">
+            <h2 id="contact-header">Make a Reservation for a Craft Cafe Workshop</h2>
+        </div>
+    </div>
+    {% if user.is_authenticated %}
+    <div class="row">
+        <div class="col-8 offset-2">
+            <p>
+                Booking as: {{ user.username }}
+            </p>
+            <form method="POST" class="contact-form">
+                {% csrf_token %}
+                {{ booking_form | crispy }}
+                <div class="row text-center">
+                    <div class="col-12">
+                        <button type="submit" onclick="validateForm()" id="booking-form-btn" class="btn btn-lg btn-info my-3">Submit Booking Request</button>
+                    </div>
+                </div>
+            </form>
+        </div>  
+    </div>
+</div>
+
+{% else %}
+
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-12">
+            <h3>
+                You must be logged in to make a booking. 
+            </h3>
+            <a href="{% url 'account_login' %}">Log in Here</a>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+<!--Stop booking form submission if datefield has not been filled in-->
+<script>
+        function validateForm() {
+        var date = $('#id_day').datepicker('getDate');
+        if (date === null) {
+            event.preventDefault();
+            alert('Please complete all the fields');
+        } else {
+
+        }
+    }  
+</script>
+
+<!--Link to Javascript-->
+<script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+
+{%endblock%}

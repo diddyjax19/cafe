@@ -1,0 +1,330 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container-fluid callout-container">
+  <!-- Callout -->
+  <div class="row">
+    <div class="col-12">
+      <section class="callout">
+        <div class="jumbotron">
+          <h1 class="display-2 jumbotron-header">The Craft Café</h1>
+          <p class="jumbotron-text blockquote mt-2">Coffee, cake, crafts, and good company...</p>
+          <a class="btn btn-info" href="{% url 'contact' %}" role="button">Book into a craft workshop here</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+  <!-- Callout -->
+
+  <hr class="solid">
+
+  <!-- Cafe Menu -->
+  <div class="container-fluid menu-container" id="menu">
+    <div class="row">
+      <div class="col-12 my-5">
+        <h2>Craft Café Menu</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Food Menu Card -->
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 food-container card">
+        <img class="card-img-top mx-auto" src="{% static 'images/menu-food.jpg' %}" alt="plate of colourful salad">
+          <div class="card-body">
+            <h5 class="food-card-title text-center">Food</h5>
+            <div class="row">
+              <div class="col-12">
+                  <table class="table menu-table mx-auto">
+                    <thead>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Craft Cafe Salad</td>
+                        <td>£3.50</td>
+                      </tr>
+                      <tr>
+                        <td>Soup of the Day</td>
+                        <td>£2.00</td>
+                      </tr>
+                      <tr>
+                        <td>Toasted Club Sandwich</td>
+                        <td>£1.90</td>
+                      </tr>
+                      <tr>
+                        <td>Cheese Burger & Chips</td>
+                        <td>£3.99</td>
+                      </tr>
+                      <tr>
+                        <td>Full English Breakfast</td>
+                        <td>£2.40</td>
+                      </tr>
+                      <tr>
+                        <td>Tuna and Cheese Panini</td>
+                        <td>£2.00</td>
+                      </tr>
+                      <tr>
+                        <td>Egg Mayonnaise Baguette</td>
+                        <td>£2.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>  
+            </div>
+          </div>
+      </div> 
+      <!-- Drinks Menu Card -->
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 food-container card">
+        <img class="card-img-top mx-auto" src="{% static 'images/menu-tea2.jpg' %}" alt="Cup of tea">
+          <div class="card-body">
+            <h5 class="food-card-title text-center">Drinks</h5>
+            <table class="table menu-table mx-auto">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cappuccino</td>
+                  <td>£1.70</td>
+                </tr>
+                <tr>
+                  <td>Macchiato</td>
+                  <td>£1.90</td>
+                </tr>
+                <tr>
+                  <td>Espresso</td>
+                  <td>£1.60</td>
+                </tr>
+                <tr>
+                  <td>Tea</td>
+                  <td>£1.20</td>
+                </tr>
+                <tr>
+                  <td>Mint Tea Infusion</td>
+                  <td>£1.40</td>
+                </tr>
+                <tr>
+                  <td>Hot Chocolate</td>
+                  <td>£2.50</td>
+                </tr>
+                <tr>
+                  <td>Milkshake</td>
+                  <td>£2.80</td>
+                </tr>
+                <tr>
+                  <td>Freshly Squeezed Fruit Juice</td>
+                  <td>£2.10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div> 
+      <!-- Desserts Menu Card -->
+      <div class="col-12 col-sm-6 col-md-6 offset-sm-3 offset-lg-0 col-lg-4 food-container card">
+        <img class="card-img-top mx-auto" src="{% static 'images/menu-cake2.jpg' %}" alt="Plate of desserts">
+          <div class="card-body">
+            <h5 class="food-card-title text-center">Desserts</h5>
+            <table class="table menu-table mx-auto">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cake of the Day</td>
+                  <td>£1.30</td>
+                </tr>
+                <tr>
+                  <td>Craft Cafe Macaroons</td>
+                  <td>£0.90</td>
+                </tr>
+                <tr>
+                  <td>Muffin</td>
+                  <td>£1.00</td>
+                </tr>
+                <tr>
+                  <td>Almond Cookie</td>
+                  <td>£0.60</td>
+                </tr>
+                <tr>
+                  <td>Biscuit Sharing Plate</td>
+                  <td>£2.70</td>
+                </tr>
+                <tr>
+                  <td>Apple Crumble</td>
+                  <td>£1.30</td>
+                </tr>
+                <tr>
+                  <td>Banoffee Pie</td>
+                  <td>£2.20</td>
+                </tr>
+                <tr>
+                  <td>Flapjack</td>
+                  <td>£1.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>   
+    </div>
+  </div>
+  <!-- Cafe Menu -->
+
+  <hr class="solid">
+
+  <!-- Craft Workshops Info -->
+  <div class="container-fluid workshops-container">
+    <div class="row">
+      <div class="col-12 mt-4 mb-2">
+        <h2>Craft Café Workshops</h2>
+      </div>
+    </div>
+
+    <!-- Craft Workshops Info Cards -->
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-4">
+        <div class="card text-center mt-2 ws-overview-card" id="wool-card">
+          <div class="card-body">
+            <h2 class="card-title overview-titles"><a href="{% url 'contact' %}#wool-info" class="btn btn-transparent">Wool</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4">
+        <div class="card text-center mt-2 ws-overview-card" id="quilting-card">
+          <div class="card-body">
+            <div class="card-body">
+              <h2 class="card-title overview-titles"><a href="{% url 'contact' %}#quilt-info" class="btn btn-transparent">Quilting</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4">
+        <div class="card text-center mt-2 ws-overview-card" id="clothing-card">
+          <div class="card-body">
+            <h2 class="card-title overview-titles"><a href="{% url 'contact' %}#clothes-info" class="btn btn-transparent">Clothing</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4">
+        <div class="card text-center mt-2 ws-overview-card" id="home-card">
+          <div class="card-body">
+            <h2 class="card-title overview-titles"><a href="{% url 'contact' %}#home-info" class="btn btn-transparent">Home Crafts</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4">
+        <div class="card text-center mt-2 ws-overview-card" id="needlepoint-card">
+          <div class="card-body">
+            <h2 class="card-title overview-titles"><a href="{% url 'contact' %}#needlepoint-info" class="btn btn-transparent">Needle Point</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4">
+        <div class="card text-center mt-2 ws-overview-card" id="kids-card">
+          <div class="card-body">
+            <h2 class="card-title overview-titles"><a href="{% url 'contact' %}#kids-info" class="btn btn-transparent">Kids Crafts</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Workshops booking Button -->
+    <div class="row text-center">
+      <div class="col-12">
+        <a class="btn btn-lg btn-dark my-4" href="{% url 'contact' %}">Click here to find out more and book</a>
+      </div>
+    </div> 
+  </div>
+  <!-- Craft Workshops info -->
+
+  <hr class="solid">
+
+  <!-- Reviews -->
+  <div class="container-fluid reviews-container">
+      <div class="row">
+        <div class="col-12 mt-4 mb-2">
+          <h2>Craft Café Reviews</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-2">
+          <div class="card review-card">
+            <div class="card-body">
+              <h5 class="card-title">Best macaroons around!</h5>
+              <p class="card-text">We popped in once for a cup of tea and plate of macaroons. Now it's become a weekly ritual we just can't resist.</p>
+              <footer class="blockquote-footer">Peter Smith</footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-2">
+          <div class="card review-card">
+            <div class="card-body">
+              <h5 class="card-title">The crafts are so fun!</h5>
+              <p class="card-text">I signed up for the kids craft morning with my 7 yr old and we had a blast. The teachers are so
+                creative and every week there are new things to make. My daughter can't wait to go back, and nor can I.</p>
+              <footer class="blockquote-footer">Sarah-Jayne Foxton</footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-4 mb-4">
+          <div class="card review-card">
+            <div class="card-body">
+              <h5 class="card-title">Craft party success!</h5>
+              <p class="card-text">We organised a bespoke craft party for my friend's birthday and it was so much fun. The staff were
+                really great, and planned a fantastic afternoon full of crafts, cakes and lots of champagne. We haven't
+                laughed so much in a long time.</p>
+              <footer class="blockquote-footer">Emma Ravenscroft</footer>
+            </div>
+          </div>
+        </div>
+      </div> 
+  </div>    
+  <!-- Reviews -->
+
+  <hr class="solid">
+
+  <!-- Map -->
+  <div class="container-fluid map-container">
+    <div class="row">
+      <div class="col-12 my-4">
+        <h2>Where to Find Us:</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Pitshanger Lane, Ealing, London, W13</p>
+        <P><i class="fas fa-phone-alt"></i> 0208 991 1234</P>
+        <p> Open every day 7am till 8 pm</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div id="map">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map -->
+
+  <hr class="solid">
+
+  <!-- Google Map Scripts -->
+  <script>
+    function initMap() {
+      const craftCafe = {
+        lat: 51.52624252958129, 
+        lng: -0.31297166535457566
+      };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: craftCafe
+      });
+      const marker = new google.maps.Marker({
+        position: craftCafe,
+        map: map,
+      });
+    }
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVIraa4wdV2VzL6WPNotQP_uf7GpqlLyg&callback=initMap&v=weekly">
+  </script>
+  
+
+{%endblock%}

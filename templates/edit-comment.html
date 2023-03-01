@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container-fluid edit-container">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1 class="mt-4">Edit your Comment</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h4 class="text-center"><strong>Edit comment posted on: {{ comment.post.title }}</strong></h4>
+            <form method="post" class="comment-form" style="margin-top: 1.3em;">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <div class="row text-center">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-lg btn-dark my-3">Save Changes</button>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center">
+                <a href="{% url 'profile-page' %}" class="btn btn-lg btn-dark my-3">Go Back</a>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+{%endblock%}

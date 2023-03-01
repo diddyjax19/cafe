@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+
+<body>
+    <header>
+        <div class="container error-container">
+            <div class="text-center">
+                <div>
+                    <h4>Sorry this page doesn't exist.</h4>
+                    <h5>Click <a href="{% url 'home' %}">here</a> to return back to the Craft Cafe Homepage</h5>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+{%endblock%}
+

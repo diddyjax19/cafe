@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC:wght@700&family=Dancing+Script&family=Luckiest+Guy&family=Noto+Sans+JP&family=Rowdies:wght@300&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+hr.solid {
+    border-top: 12px solid #1d486a;
+    width: 100%;
+    margin: auto;
+    opacity: 1;
+  }
+
+/* Navigation Bar */
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.acc-icon {
+    font-size: 1.5rem;
+    padding-right: 8px;
+}
+
+/* Footer */
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+footer {
+    margin: auto 30px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+/* Callout Container */
+.callout-container {
+    height: 100vh;
+    background: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674039432/cafe-background_yfjzow.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    color: white;
+    margin-bottom: 18rem;
+    margin-right: 18rem;
+}
+
+h1, h2 {
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color: #1d486a;
+}
+
+.jumbotron-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
+}
+
+.btn-info {
+    background-color: #29b3ad;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn-info:hover {
+    background-color: #3dd2cc;
+    border-color: #1d486a;
+}
+
+/* Menu */
+
+.menu-container {
+    background-color: #e3fff6;
+    background-size: cover;
+}
+
+.food-container {
+    border-color: transparent;
+    background-color: #e3fff6;
+    background-size: cover;
+}
+
+.card-img-top {
+    height: 250px;
+    width: 286px;
+}
+
+.food-card-title {
+    font-size: 2rem;
+    font-family: 'Rowdies', cursive;
+    color: #1d486a;
+}
+
+.menu-table {
+    max-width: 280px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+}
+
+
+/* Homepage Workshops Overview */
+
+.workshops-container {
+    background-color: #66dcd7;
+    height: 100%;
+}
+
+.ws-overview-card {
+    max-width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn-dark {
+    background-color: #1d486a;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #286392;
+}
+
+.btn-transparent {
+    border: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+.btn-transparent:hover {
+    border: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #66dcd7;
+}
+
+#wool-card {
+    background-image: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674901659/alex-block-FRfuOZWpdeI-unsplash_aeujvp.jpg");
+    background-size: cover;
+}
+
+#quilting-card {
+    background: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674901661/20200825_165053_mmuthc.jpg");
+    background-size: contain;
+}
+
+#clothing-card {
+    background: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674996920/dress_tbsrao.jpg");
+    background-size: cover;
+}
+
+#home-card {
+    background: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674908761/20211201_105546_lx9osl.jpg");
+    background-size: cover;
+}
+
+#needlepoint-card {
+    background: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674997459/needlepoint_ken2n5.jpg") center;
+    background-size: cover;
+}
+
+#kids-card {
+    background: url("https://res.cloudinary.com/dkolsfjkx/image/upload/v1674901659/julietta-watson-1VT2qoBtc-k-unsplash_bsd6qb.jpg")center;
+}
+
+/* Reviews */
+
+.reviews-container {
+    background-color: #e3fff6;
+    background-size: cover;
+}
+
+.review-card {
+    height: 230px;
+    background-color: rgb(255 255 255 / 15%);
+    border: none;
+}
+
+/* Map */
+
+.map-container {
+    background-color: #66dcd7;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+/* Contact Page */
+
+.contact-container {
+    background-color: #e3fff6;
+}
+
+.img-thumbnail {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.user-auth-container {
+    height: 300px;
+    width: 300px;
+    border-color: #1d486a;
+}
+
+#contact-header {
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.contact-form {
+    max-width: 800px;
+}
+
+/* craft Community Page */
+
+.posts-container {
+    background-size: cover;
+    background-color: #e3fff6;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.card-title {
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.post-link:hover,
+.page-link {
+    color: #3dd2cc;
+}
+
+/* Post-Details Page */
+
+.post-details-container {
+    background-color: #e3fff6;
+    background-size: cover;
+}
+
+.return-icon {
+    color: white;
+}
+
+.comment-card {
+    border: none;
+    background-color: transparent;
+}
+
+.post-title {
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.img-fluid {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+/* Login Page */
+
+.account-container {
+    margin-bottom: 90px;
+}
+
+.btn-login {
+    margin-left: 20px;
+    background-color: #29b3ad;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn-login:hover {
+    background-color: #3dd2cc;
+    border-color: #1d486a;
+}
+
+.link-text {
+    color: #3dd2cc;
+}
+
+/* Profile Page */
+
+hr.rounded {
+    border-top: 8px solid #29b3ad;
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+  }
+
+.profile-table {
+    height: auto;
+    width: 90%;
+
+}
+
+/* Edit Pages */
+
+.edit-container {
+    background-color: #66dcd7;
+    height: 100vh;
+    margin-top: 0;
+}
+
+.edit-container h1 {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Delete Pages */
+
+.delete-container {
+    background-color: #e3fff6;
+    height: 100vh;
+    margin-top: 0;
+}
+
+.delete-container h1 {
+    margin-top: 50px;
+}
+
+/* Cafe Admin Dashboard */
+
+.btn-approve {
+    border: transparent;
+    background-color: white;
+}
+
+.btn-approve:hover {
+    border: transparent;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.btn-approve img {
+    height: 20px;
+    width: 20px;
+}
+
+.error-container {
+    background: url('https://res.cloudinary.com/dkolsfjkx/image/upload/v1677264147/logo_u3njf4.png');
+}
+
+
+/* Media Queries */
+
+/* for small screen size from 767px wide and down */
+@media screen and (max-width: 767px) {
+   
+    .jumbotron {
+        margin-right: 1rem;
+    }
+
+    .profile-table {
+        height: auto;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .btn-profile {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+}
+
+/* for mobile screen size from 576px wide and down */
+@media screen and (max-width: 576px) {
+   
+    .justify {
+        display:flex;
+        justify-content: center;
+    }
+
+    .align {
+        text-align: center;
+        margin-left: -95px;
+    }
+
+    .btn-transparent {
+        font-size: 2rem;
+    }
+
+    .btn-transparent:hover {
+        font-size: 2.2rem;
+    }
+
+    .profile-table td {
+        padding: 0.3rem 0.1rem;
+        font-size: 0.8rem;
+    }
+}
